@@ -1,0 +1,20 @@
+<%- include("./layout/header.ejs")%>
+<h1> Resend verification email</h1>
+
+<form action="/resend-verification" method="post" >
+
+<div>
+    <input type="email" placeholder="Enter email" name="email" size="40" required />
+</div>
+<br />
+
+<button type="submit"> Resend verification link </button>
+
+
+</form>
+
+<%if(typeof message !== 'undefined'){%>
+<h4 style="color: green;"><%=message%></h4>
+<%}%>
+<%- include("./layout/footer.ejs")%>
+

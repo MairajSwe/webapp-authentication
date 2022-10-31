@@ -1,0 +1,31 @@
+<%- include("./layout/header.ejs")%>
+<h1> User profile</h1>
+
+<table>
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Image</th>
+            <th>Edit</th>
+            <th>Delete</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><%=user.name %></td>
+            <td><%=user.email %></td>
+            <td><img src="images/users/<%=user.image %>" alt="<%=user.name %>" height="100" width="100"/></td>
+            <td><a href="/edit?id=<%=user._id%>"> Edit </a></td>
+            <td></td>
+        </tr>
+    </tbody>
+</table>
+<br/>
+<br/>
+
+<br/>
+<br/>
+<a href="/logout"> logout </a>
+<%- include("./layout/footer.ejs")%>
+

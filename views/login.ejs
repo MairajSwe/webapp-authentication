@@ -1,0 +1,30 @@
+<%- include("./layout/header.ejs")%>
+<h1> User login</h1>
+
+<form action="/login" method="post" >
+
+<div>
+    <input type="email" placeholder="Enter email" name="email" size="40" required />
+</div>
+<br />
+<div>
+    <input type="password" placeholder="Enter password" name="password" size="40" required />
+</div>
+<br />
+<br />
+<button type="submit"> login </button>
+
+<div>
+    <br />
+    <a href="/resend-verification">Resend verification link</a>
+    <br /><br />
+
+    <a href="/forget-password">Forget password</a>
+</div>
+</form>
+
+<%if(typeof message !== 'undefined'){%>
+<h4 style="color: green;"><%=message%></h4>
+<%}%>
+<%- include("./layout/footer.ejs")%>
+

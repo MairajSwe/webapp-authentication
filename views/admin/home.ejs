@@ -1,0 +1,32 @@
+<%- include("../layout/header.ejs")%>
+<h1> Admin profile</h1>
+
+<table>
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Image</th>
+            <th>Edit</th>
+            <th>Delete</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><%=admin.name %></td>
+            <td><%=admin.email %></td>
+            <td><img src="images/users/<%=admin.image %>" alt="<%=admin.name %>" height="100" width="100"/></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </tbody>
+</table>
+<br/>
+
+
+<a href="/admin/dashboard"> Dashboard </a>
+<br/>
+<br/>
+<a href="/admin/logout"> logout </a>
+<%- include("../layout/footer.ejs")%>
+
