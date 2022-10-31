@@ -1,9 +1,4 @@
-user registeration 
-/loadRegistration -> registration page
+User management / authentication
 
-user registeration
-/register -> store data in the database
 
-verify our user
-
-/verify -> verify our user
+Admin management / authentication
